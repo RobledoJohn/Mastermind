@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +16,33 @@
 -->
 <body>
     <header>
-        <img class="logo" src="img/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li class="Login-button">Login</li>
-            </ul>
+        <nav class="header">
+            <div class="fondo-logo">
+                <img class="logo" src="img/mastermind-lateral-bw.png" alt="logo">
+            </div>        
+            <div class="menu">
+                <ul class="menu-lista">
+                    <li class="nav-list"><a href="/">Características</a></li>
+                    <li class="nav-list"><a href="/">Contacto</a></li>
+                    <li class="nav-list">
+                        <button class="Login-button"><p>Login</p>
+                            <img class="icon-login" src="/img/solar_login-2-linear.png" alt="login">
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>
-                Reparación de equipos
-            </h1>
+        <section class="banner">
+            <img class="img-banner" src="img/img.png" alt="imagen de equipos electronicos">
+            <div class="tittle-banner">
+                <h1>El mejor sistema de gestión de mantenimiento de equipos.</h1>
+                <h2>Mejora tus procesos ¡Ahora!</h2>
+            </div>
         </section>
+        <section class="services">servicios</section>
+        <section class="contact">contacto</section>
     </main>
     <footer>
         <p>Adso, SENA.</p>

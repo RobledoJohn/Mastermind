@@ -1,36 +1,118 @@
 *{
-    background-color: white;
+    font-family: 'Inter', sans-serif;
     width: 100%;
     margin: 0%;
     padding: 0%;
 }
 
-header{
+/*HEADER*/
+header{ 
+    background-color: #C5D8D1;
+}
+
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 5px 20px;
 }
 
-.logo{
+.header{
+    padding: 1% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fondo-logo{
+    background-color: #12263A;
+    max-width: max-content;
+    border-radius: 0px 10px 10px 1%;
+    padding: 0px 30px 0px 10%;
+}
+
+img{
     width: 200px;
 }
+a, ul{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #12263A;
+}
+.menu{
+    padding-right: 10%;
+    width: min-content;
+}
+.menu-lista{
+    display: flex;
+    align-items: center;
+}
 
-nav{
-    background-color: blue;
-    width: max-content;
-    height: max-content;
+.nav-list{
+    padding-left: 20px;
 }
 
 .Login-button{
-    list-style: none;
-    background-color: #06BCC1;
-    border-radius: 5px;
-    height: 30px;
-    width: 60px;
+    background-color: #12263A;
+    border-radius: 10px;
+    height: 45px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+button p{
+    font-weight: bolder;
+    color: #06BCC1;
+    margin: 0px 10px 0px 15px;
+}
+
+.icon-login{
+    height: 30px;
+    width: 30px;
+    margin: 0px 15px 0px 0px;
+}
+
+/*MAIN*/
+
+main{
+    background-color: #C5D8D1;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.img-banner{
+    height: 400px;
+    width: auto;
+    padding: 20px 10%;
+}
+
+.banner div{
+    text-align: center;
+}
+
+.banner h1{
+    color: #06BCC1;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.banner h2{
+    padding-top: 20px;
+    color: #12263A;
+    font-size: 20px;
+}
+
+.services{
+ background-color: #12263A;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #12263A;
 }
