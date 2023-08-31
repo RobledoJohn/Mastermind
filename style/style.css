@@ -7,6 +7,7 @@
 
 /*HEADER*/
 header{ 
+    padding-top: 15px;
     background-color: #C5D8D1;
 }
 
@@ -88,7 +89,7 @@ main{
     align-items: center;
     width: 80%;
     gap: 30px;
-    padding: 50px 0;
+    margin: 50px 0;
 }
 
 .img-banner{
@@ -102,29 +103,99 @@ main{
 .banner h1{
     width: auto;
     color: #06BCC1;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bolder;
 }
 .banner h2{
     padding-top: 20px;
     color: #12263A;
     font-size: 20px;
-    font-weight: bolder;
 }
 
+.subtitle, .subtitle-2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+
+/*Caracteristicas*/
+
 .services{
- background-color: #12263A;
+    background-color: #12263A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .subtitle{
-    font-size: xx-large;
-    padding: 20px;
-    text-align: center;
     color: #06BCC1;
+}
+
+.recuadro{
+    width: 80%;
+    color: white;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+    grid-template-rows: repeat(2, auto);
+    padding: 60px 0;
+}
+.item1, .item2, .item3, .item4{
+    width: auto;
+    height: 150px;
+    border-color: #06BCC1;
+    border-style: dashed;    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.img-icon{
+ width: 60px;
+}
+
+/*contacto*/
+
+.subtitle-2{
+    color: #12263A;
 }
 
 /*Footer*/
 
 footer{
     background-color: #12263A;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.foot-l, .foot-r{
+    height: 100px;
+    width: 1000px;
+}
+
+.foot-l{
+    background-color: #06BCC1;
+    border-radius: 0 15px 15px 0;
+}
+.foot-l img{
+    width: 80px;
+    padding: 10px 0 0 40%;
+}
+.foot-c{
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+.foot-r{
+    background-color: #C5D8D1;
+    border-radius: 15px 0 0 15px;
+}
+.foot-r img{
+    width: 130px;
+    padding: 8px 0 0 40%;
 }
