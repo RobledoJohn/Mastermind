@@ -78,18 +78,21 @@ button p{
 
 main{
     background-color: #C5D8D1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner{
     display: flex;
     align-items: center;
     width: 80%;
+    gap: 30px;
+    padding: 50px 0;
 }
 
 .img-banner{
-    height: 400px;
-    width: auto;
-    padding: 20px 10%;
+    width: fit-content;
 }
 
 .banner div{
@@ -97,18 +100,27 @@ main{
 }
 
 .banner h1{
+    width: auto;
     color: #06BCC1;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bolder;
 }
 .banner h2{
     padding-top: 20px;
     color: #12263A;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .services{
  background-color: #12263A;
+}
+
+.subtitle{
+    font-size: xx-large;
+    padding: 20px;
+    text-align: center;
+    color: #06BCC1;
 }
 
 /*Footer*/
