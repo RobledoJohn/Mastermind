@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="img/mastermind-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&display=swap" rel="stylesheet">
@@ -15,39 +16,88 @@
     #C5D8D1  - gris
 -->
 <body>
-    <header>
-        <nav class="header">
-            <div class="fondo-logo">
-                <img class="logo" src="img/mastermind-lateral-bw.png" alt="logo">
-            </div>        
-            <div class="menu">
-                <ul class="menu-lista">
-                    <li class="nav-list"><a href="/">Características</a></li>
-                    <li class="nav-list"><a href="/">Contacto</a></li>
-                    <li class="nav-list">
-                        <button class="Login-button"><p>Login</p>
-                            <img class="icon-login" src="/img/solar_login-2-linear.png" alt="login">
+    <div class="container">
+        <header>
+            <nav class="header">
+                <div class="fondo-logo">
+                    <img class="logo" src="img/mastermind-lateral-bw.png" alt="logo">
+                </div>        
+                <div class="menu">
+                    <ul class="menu-lista">
+                        <li class="nav-list navlist"><a href="#services">Características</a></li>
+                        <li class="nav-list navlist"><a href="#contact">Contacto</a></li>
+                        <li class="nav-list">
+                            <a class="Login-button" href="pages/login.html" target="_blank">
+                                <p>Login</p>
+                                <img class="icon-login" src="/img/solar_login-2-linear.png" alt="login">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="banner">
+                <img class="img-banner" src="img/img.png" alt="imagen de equipos electronicos">
+                <div class="tittle-banner">
+                    <h1>El mejor sistema de gestión de mantenimiento de equipos.</h1>
+                    <h2>Mejora tus procesos ¡Ahora!</h2>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <h2 class="subtitle">Características</h2>
+                <div class="recuadro">
+                    <div class="item1">
+                        <img class="img-icon" src="img/1.png" alt="imagen">
+                        <h3>Gestión de inventarios</h3>
+                    </div>
+                    <div class="item2">
+                        <img class="img-icon" src="img/2.png" alt="imagen">
+                        <h3>Gestión de equipos</h3>
+                    </div>
+                    <div class="item3">
+                        <img class="img-icon" src="img/3.png" alt="imagen">
+                        <h3>Gestión de clientes</h3>
+                    </div>
+                    <div class="item4">
+                        <img class="img-icon" src="img/4.png" alt="imagen">
+                        <h3>Control en tiempo real</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2 class="subtitle-2">Contacto</h2>
+                <div class="contact-group">
+                    <form class="form" method="post">
+                        <label for="name"></label>
+                        <input class="item-form" type="text" name="name" placeholder="nombre" required>
+                        <label for="mail"></label>
+                        <input class="item-form" type="email" name="mail" placeholder="correo" required>
+                        <label for="asunto"></label>
+                        <input class="item-form" type="text" name="asunto" placeholder="asunto" required>
+                        <label for="desc"></label>
+                        <textarea class="item-form" name="desc" id="" cols="30" rows="10" placeholder="Descripción" required></textarea>
+                        <button class="boton-submit" type="submit">
+                            Enviar<img src="img/bi_send-fill.png" alt=""> 
                         </button>
-                    </li>
-                </ul>
+                    </form>
+                    <a class="wp-logo" href="http://wa.me/+573024942629" target="_blank"><img  src="img/logos_whatsapp-icon.png" alt="chat whatsapp"></a>
+                </div>
+            </section>
+            </main>
+        <footer>
+            <div class="foot-l">
+                <img src="img/logo_blanco.png" alt="logo-sena">
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="banner">
-            <img class="img-banner" src="img/img.png" alt="imagen de equipos electronicos">
-            <div class="tittle-banner">
-                <h1>El mejor sistema de gestión de mantenimiento de equipos.</h1>
-                <h2>Mejora tus procesos ¡Ahora!</h2>
+            <div class="foot-c">
+                <p>Diseñado y desarrollado por: <strong>John Robledo</strong><br>
+                    Técnólogo en análisis y desarrollo de software<br>
+                    SENA 2023, Ficha: 2675524</p>
             </div>
-        </section>
-        <section class="services">servicios</section>
-        <section class="contact">contacto</section>
-    </main>
-    <footer>
-        <p>Adso, SENA.</p>
-    </footer>
-    
-
+            <div class="foot-r">
+                <img src="img/mastermind-letra-b.png" alt="logo-master">
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

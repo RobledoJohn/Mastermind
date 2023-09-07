@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/img/mastermind-logo.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container-login">
+        <img src="/img/mastermind-lateral-w.png" alt="logo" class="logo-log">
+        <div class="form-regis">
+            <h1>Registrarse</h1>
+            <form class="form-reg" action="" method="post">
+                <div class="form-parts">
+                    <div class="part1">
+                        <label for="name"></label>
+                        <input class="inp-log" type="text" name="name" placeholder="Nombre" required>
+                        <label for="date"></label>
+                        <input class="inp-log" type="date" name="date" placeholder="Fecha de nacimiento" required>
+                        <label for="dni"></label>
+                        <select class="inp-log select-reg" name="dni" required>
+                            <option value="0">Tipo de documento</option>
+                            <option value="1">T.I</option>
+                            <option value="2">C.C</option>
+                            <option value="3">C.E</option>
+                        <label for="pass"></label>
+                        <input class="inp-log" type="password" name="pass" placeholder="Contraseña" required>
+                    </div>
+                    <div class="part2">
+                        <label for="lastn"></label>
+                        <input class="inp-log" type="text" name="lastn" placeholder="Apellido" required>
+                        <label for="mail"></label>
+                        <input class="inp-log" type="email" name="mail" placeholder="E-mail" required>
+                        <label for="numid"></label>
+                        <input class="inp-log" type="text" name="numid" placeholder="Numero de identificación" required>
+                        <label for="passw"></label>
+                        <input class="inp-log" type="password" name="passw" placeholder="Confirmar Contraseña" required>    
+                    </div>
+                </div>
+                    
+                <button class="btn-reg" type="submit">Registrarse</button>
+                <div class="reg-reg">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a href="/pages/login.html">Iniciar sesión</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

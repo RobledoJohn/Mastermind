@@ -3,10 +3,16 @@
     width: 100%;
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth; /*hace que en la pagina el auto scroll sea suave*/
+}
+
+textarea{
+    resize: none;
 }
 
 /*HEADER*/
 header{ 
+    padding-top: 15px;
     background-color: #C5D8D1;
 }
 
@@ -30,7 +36,8 @@ nav{
     padding: 0px 30px 0px 10%;
 }
 
-img{
+.logo, .icon-login{
+    padding: 8px 0px 0px 0px;
     width: 200px;
 }
 a, ul{
@@ -46,50 +53,72 @@ a, ul{
 .menu-lista{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
-.nav-list{
-    padding-left: 20px;
+.navlist{
+    position: relative;
+}
+.navlist::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: #06BCC1;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.navlist:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .Login-button{
     background-color: #12263A;
     border-radius: 10px;
     height: 45px;
-    width: 100px;
+    width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.Login-button:hover{
+    background-color: #FFFFFF;
+}
 
-button p{
+a p{
     font-weight: bolder;
     color: #06BCC1;
     margin: 0px 10px 0px 15px;
 }
 
 .icon-login{
-    height: 30px;
-    width: 30px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 15px 7px 0px;
 }
 
 /*MAIN*/
 
 main{
     background-color: #C5D8D1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner{
     display: flex;
     align-items: center;
     width: 80%;
+    height: 500px;
+    gap: 30px;
+    margin: 50px 0;
 }
 
 .img-banner{
-    height: 400px;
-    width: auto;
-    padding: 20px 10%;
+    width: fit-content;
 }
 
 .banner div{
@@ -97,6 +126,7 @@ main{
 }
 
 .banner h1{
+    width: auto;
     color: #06BCC1;
     font-size: 50px;
     font-weight: bolder;
@@ -107,12 +137,310 @@ main{
     font-size: 20px;
 }
 
+.subtitle, .subtitle-2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+
+/*Caracteristicas*/
+
 .services{
- background-color: #12263A;
+    height: 750px;
+    background-color: #12263A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle{
+    color: #06BCC1;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.recuadro{
+    width: 80%;
+    color: white;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+    grid-template-rows: repeat(2, auto);
+    padding: 60px 0;
+}
+.item1, .item2, .item3, .item4{
+    width: auto;
+    height: 150px;
+    border-color: #06BCC1;
+    border-style: dashed;    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover{
+    background-color: #1e3852;
+}
+
+.img-icon{
+ width: 60px;
+}
+
+/*contacto*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+}
+
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle-2{
+    color: #12263A;
+}
+
+.wp-logo{
+    width: 55px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(75, 214, 56);
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.wp-logo:hover{
+    background-color: rgb(29, 129, 16);
+}
+
+.form{
+    background-color: #12263A;
+    border-radius: 40px;
+    width: 500px;
+    padding: 20px 0;
+    margin: 50px 0 50px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-form{
+    width: 400px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 3px #06BCC1 solid;
+    border-radius: 10px;
+}
+
+.boton-submit{
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #06BCC1;
+    border-radius: 15px;
+    border: #C5D8D1;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: large;
+}
+.boton-submit:hover{
+    background-color: white;
+    color: #12263A;
+}
+
+.boton-submit img{
+    padding: 0;
+    margin-left: 5px;
+    width: 20px;
 }
 
 /*Footer*/
 
 footer{
     background-color: #12263A;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.foot-l, .foot-r{
+    height: 100px;
+    width: 1000px;
+}
+
+.foot-l{
+    background-color: #06BCC1;
+    border-radius: 0 15px 15px 0;
+}
+.foot-l:hover{
+    background-color: green;
+}
+
+.foot-l img{
+    width: 80px;
+    padding: 10px 0 0 40%;
+}
+.foot-c{
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+.foot-r{
+    background-color: #C5D8D1;
+    border-radius: 15px 0 0 15px;
+}
+.foot-r img{
+    width: 130px;
+    padding: 8px 0 0 40%;
+}
+
+/*LOGIN*/
+
+.container-login{
+    text-align: center;
+    background-image: url("../img/background.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    min-height: 100vh; /*toma todo el largo de la pagina*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-log{
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.form-parts{
+    display: flex;
+}
+
+.form-login, .form-regis, .form-req{
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    border: 5px #ffffff solid;
+    border-radius: 20px;
+    color: #C5D8D1;
+}
+
+.form-login{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.form-regis{
+    width: 600px;
+    height: 400px;
+}
+.form-req{
+    width: 400px;
+    height: 280px;
+}
+.form-logn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login h1, .form-regis h1, .form-req h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.form-login h1{
+    margin: 40px 0 30px 0;
+}
+
+.form-regis h1, .form-req h1{
+    margin: 30px 0 20px 0;
+}
+
+.inp-log, .inp-reg{
+    width: 250px;
+    height: 20px;
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.inp-log{
+    background-color: white;
+    opacity: 0.6;
+}
+.inp-log::placeholder{
+    color: black;
+}
+
+.forgot{
+    margin: 10px 0;
+    font-size: 12px;
+    color: white;
+}
+
+.btn-log, .btn-req, .btn-reg{
+    background-color: white;
+}
+
+.btn-log{
+    margin: 30px 0 40px 0;
+}
+
+.btn-req, .btn-reg{
+    margin: 20px 0 20px 0;
+}
+.btn-log:hover, .btn-req:hover, .btn-reg:hover{
+    background-color: #06BCC1;
+    color: white;
+}
+
+.btn-log, .btn-reg, .btn-req{
+    width: 120px;
+    height: 35px;
+    color: #12263A;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.reg-log, .reg-reg, .reg-req{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.reg-log p, .reg-log a,
+.reg-reg p, .reg-reg a,
+.reg-req p, .reg-req a{
+    width: fit-content;
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.reg-log a, .reg-reg a,
+.reg-req a{
+    color: white;
+}
+
+.select-reg{
+    height: 30px;
+    width: 260px;
 }
