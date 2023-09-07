@@ -24,10 +24,10 @@
                 </div>        
                 <div class="menu">
                     <ul class="menu-lista">
-                        <li class="nav-list"><a href="/">Características</a></li>
-                        <li class="nav-list"><a href="/">Contacto</a></li>
+                        <li class="nav-list"><a href="#services">Características</a></li>
+                        <li class="nav-list"><a href="#contact">Contacto</a></li>
                         <li class="nav-list">
-                            <a class="Login-button" href="login.html" target="_blank">
+                            <a class="Login-button" href="pages/login.html" target="_blank">
                                 <p>Login</p>
                                 <img class="icon-login" src="/img/solar_login-2-linear.png" alt="login">
                             </a>
@@ -44,7 +44,7 @@
                     <h2>Mejora tus procesos ¡Ahora!</h2>
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <h2 class="subtitle">Características</h2>
                 <div class="recuadro">
                     <div class="item1">
@@ -65,23 +65,23 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h2 class="subtitle-2">Contacto</h2>
                 <div class="contact-group">
                     <form class="form" method="post">
                         <label for="name"></label>
-                        <input class="item-form" type="text" name="name" placeholder="nombre">
+                        <input class="item-form" type="text" name="name" placeholder="nombre" required>
                         <label for="mail"></label>
-                        <input class="item-form" type="text" name="mail" placeholder="correo">
+                        <input class="item-form" type="email" name="mail" placeholder="correo" required>
                         <label for="asunto"></label>
-                        <input class="item-form" type="text" name="asunto" placeholder="asunto">
+                        <input class="item-form" type="text" name="asunto" placeholder="asunto" required>
                         <label for="desc"></label>
-                        <textarea class="item-form" name="desc" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+                        <textarea class="item-form" name="desc" id="" cols="30" rows="10" placeholder="Descripción" required></textarea>
                         <button class="boton-submit" type="submit">
                             Enviar<img src="img/bi_send-fill.png" alt=""> 
                         </button>
                     </form>
-                    <a href="http://wa.me/+573123121234" target="_blank"><img class="wp-logo" src="img/logos_whatsapp-icon.png" alt="chat whatsapp"></a>
+                    <a href="http://wa.me/+573024942629" target="_blank"><img class="wp-logo" src="img/logos_whatsapp-icon.png" alt="chat whatsapp"></a>
                 </div>
             </section>
             </main>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="img/mastermind-logo.png">
+    <link rel="icon" href="/img/mastermind-logo.png">
     <link rel="stylesheet" href="/style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,19 @@
 </head>
 <body>
     <div class="container-login">
-        <img src="img/mastermind-lateral.png" alt="logo" class="logo-log">
+        <img src="/img/mastermind-lateral.png" alt="logo" class="logo-log">
         <div class="form-login">
             <h1>Iniciar sesión</h1>
             <form class="form-logn" action="" method="post">
                 <label for="user"></label>
-                <input class="inp-log" type="text" name="user" placeholder="E-mail">
+                <input class="inp-log" type="email" name="user" placeholder="E-mail" required>
                 <label for="pass"></label>
-                <input class="inp-log" type="text" name="user" placeholder="Contraseña">
+                <input class="inp-log" type="password" name="user" placeholder="Contraseña" required>
                 <button class="btn-log" type="submit">Iniciar Sesión</button>
-                <a class="forgot" href="/" target="_blank">¿Olvidé mi contraseña?</a>
+                <a class="forgot" href="/pages/recuperacion.html">¿Olvidé mi contraseña?</a>
                 <div class="reg-log">
                     <p>¿Eres un usuario nuevo?</p>
-                    <a href="/" target="_blank">Registrarse</a>
+                    <a href="/pages/register.html">Registrarse</a>
                 </div>
                 
             </form>

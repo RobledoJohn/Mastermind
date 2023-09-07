@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth; /*hace que en la pagina el auto scroll sea suave*/
 }
 
 /*HEADER*/
@@ -87,6 +88,7 @@ main{
     display: flex;
     align-items: center;
     width: 80%;
+    height: 500px;
     gap: 30px;
     margin: 50px 0;
 }
@@ -113,23 +115,27 @@ main{
 
 .subtitle, .subtitle-2{
     text-align: center;
-    font-size: xx-large;
+    font-size: 35px;
     font-weight: bolder;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 
 /*Caracteristicas*/
 
 .services{
+    height: 750px;
     background-color: #12263A;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .subtitle{
     color: #06BCC1;
+    margin: 0;
+    padding-bottom: 40px;
 }
 
 .recuadro{
@@ -162,6 +168,7 @@ main{
 .contact{
     display: flex;
     flex-direction: column;
+    height: 620px;
 }
 
 .contact-group{
@@ -280,6 +287,10 @@ footer{
     margin-bottom: 50px;
 }
 
+.form-parts{
+    display: flex;
+}
+
 .form-login{
     width: 400px;
     height: 400px;
@@ -288,6 +299,21 @@ footer{
     border-radius: 20px;
 }
 
+.form-regis{
+    width: 600px;
+    height: 400px;
+    background-color: #12263A;
+    border: 3px #06BCC1 solid;
+    border-radius: 20px;
+}
+.form-req{
+    width: 400px;
+    height: 280px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 3px #12263A solid;
+    border-radius: 20px;
+}
 .form-logn{
     display: flex;
     flex-direction: column;
@@ -301,13 +327,34 @@ footer{
     margin: 40px 0 30px 0;
 }
 
-.inp-log{
+.form-regis h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #ffffff;
+    margin: 30px 0 20px 0;
+}
+
+.form-req h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #12263A;
+    margin: 30px 0 20px 0;
+}
+
+.inp-log, .inp-reg{
     width: 250px;
     height: 20px;
     margin: 10px 0;
     padding: 3px;
-    border: 3px #12263A solid;
     border-radius: 4px;
+}
+
+.inp-log{
+    border: 3px #12263A solid;
+}
+
+.inp-reg{
+    border: 3px #06BCC1 solid;
 }
 
 .forgot{
@@ -316,27 +363,58 @@ footer{
 }
 
 .btn-log{
-    width: 120px;
     background-color: #12263A;
+    margin: 30px 0 40px 0;
+}
+.btn-log:hover, .btn-reg:hover{
+    background-color: #C5D8D1;
+    color: #12263A;
+}
+
+.btn-reg{
+    background-color: #06BCC1;
+    margin: 20px 0 20px 0;
+}
+
+.btn-req{
+    background-color: #12263A;
+    margin: 20px 0 20px 0;
+}
+.btn-req:hover{
+    background-color: #06BCC1;
+}
+
+.btn-log, .btn-reg, .btn-req{
+    width: 120px;
     height: 35px;
     color: white;
     font-size: medium;
     border-radius: 5px;
-    margin: 30px 0 40px 0;
 }
 
-.reg-log{
+.reg-log, .reg-reg, .reg-req{
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
 
-.reg-log p, .reg-log a{
+.reg-log p, .reg-log a,
+.reg-reg p, .reg-reg a,
+.reg-req p, .reg-req a{
     width: fit-content;
     padding: 0 2px;
     font-size: 12px;
 }
 
-.reg-log a{
+.reg-log a, .reg-reg p{
     color: white;
+}
+
+.reg-reg a, .reg-req a{
+    color: #06BCC1;
+}
+
+.select-reg{
+    height: 30px;
+    width: 260px;
 }
