@@ -64,7 +64,7 @@ a, ul{
     align-items: center;
 }
 
-button p{
+a p{
     font-weight: bolder;
     color: #06BCC1;
     margin: 0px 10px 0px 15px;
@@ -258,4 +258,85 @@ footer{
 .foot-r img{
     width: 130px;
     padding: 8px 0 0 40%;
+}
+
+/*LOGIN*/
+
+.container-login{
+    text-align: center;
+    background-image: url("../img/background-login.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    min-height: 100vh; /*toma todo el largo de la pagina*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-log{
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.form-login{
+    width: 400px;
+    height: 400px;
+    background-color: #06BCC1;
+    border: 3px #12263A solid;
+    border-radius: 20px;
+}
+
+.form-logn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #12263A;
+    margin: 40px 0 30px 0;
+}
+
+.inp-log{
+    width: 250px;
+    height: 20px;
+    margin: 10px 0;
+    padding: 3px;
+    border: 3px #12263A solid;
+    border-radius: 4px;
+}
+
+.forgot{
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.btn-log{
+    width: 120px;
+    background-color: #12263A;
+    height: 35px;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    margin: 30px 0 40px 0;
+}
+
+.reg-log{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.reg-log p, .reg-log a{
+    width: fit-content;
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.reg-log a{
+    color: white;
 }
