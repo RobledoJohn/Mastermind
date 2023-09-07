@@ -6,10 +6,6 @@
     scroll-behavior: smooth; /*hace que en la pagina el auto scroll sea suave*/
 }
 
-textarea{
-    resize: none;
-}
-
 /*HEADER*/
 header{ 
     padding-top: 15px;
@@ -314,7 +310,7 @@ footer{
 
 .container-login{
     text-align: center;
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background-login.jpg");
     background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
@@ -334,27 +330,28 @@ footer{
     display: flex;
 }
 
-.form-login, .form-regis, .form-req{
-    background-color: transparent;
-    backdrop-filter: blur(1px);
-    border: 5px #ffffff solid;
-    border-radius: 20px;
-    color: #C5D8D1;
-}
-
 .form-login{
     width: 400px;
     height: 400px;
-    
+    background-color: #06BCC1;
+    border: 3px #12263A solid;
+    border-radius: 20px;
 }
 
 .form-regis{
     width: 600px;
     height: 400px;
+    background-color: #12263A;
+    border: 3px #06BCC1 solid;
+    border-radius: 20px;
 }
 .form-req{
     width: 400px;
     height: 280px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 3px #12263A solid;
+    border-radius: 20px;
 }
 .form-logn{
     display: flex;
@@ -362,16 +359,24 @@ footer{
     align-items: center;
 }
 
-.form-login h1, .form-regis h1, .form-req h1{
+.form-login h1{
     font-size: x-large;
     font-weight: bolder;
-    color: #ffffff;
-}
-.form-login h1{
+    color: #12263A;
     margin: 40px 0 30px 0;
 }
 
-.form-regis h1, .form-req h1{
+.form-regis h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #ffffff;
+    margin: 30px 0 20px 0;
+}
+
+.form-req h1{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #12263A;
     margin: 30px 0 20px 0;
 }
 
@@ -384,39 +389,44 @@ footer{
 }
 
 .inp-log{
-    background-color: white;
-    opacity: 0.6;
+    border: 3px #12263A solid;
 }
-.inp-log::placeholder{
-    color: black;
+
+.inp-reg{
+    border: 3px #06BCC1 solid;
 }
 
 .forgot{
     margin: 10px 0;
     font-size: 12px;
-    color: white;
-}
-
-.btn-log, .btn-req, .btn-reg{
-    background-color: white;
 }
 
 .btn-log{
+    background-color: #12263A;
     margin: 30px 0 40px 0;
 }
+.btn-log:hover, .btn-reg:hover{
+    background-color: #C5D8D1;
+    color: #12263A;
+}
 
-.btn-req, .btn-reg{
+.btn-reg{
+    background-color: #06BCC1;
     margin: 20px 0 20px 0;
 }
-.btn-log:hover, .btn-req:hover, .btn-reg:hover{
+
+.btn-req{
+    background-color: #12263A;
+    margin: 20px 0 20px 0;
+}
+.btn-req:hover{
     background-color: #06BCC1;
-    color: white;
 }
 
 .btn-log, .btn-reg, .btn-req{
     width: 120px;
     height: 35px;
-    color: #12263A;
+    color: white;
     font-size: medium;
     border-radius: 5px;
 }
@@ -435,9 +445,12 @@ footer{
     font-size: 12px;
 }
 
-.reg-log a, .reg-reg a,
-.reg-req a{
+.reg-log a, .reg-reg p{
     color: white;
+}
+
+.reg-reg a, .reg-req a{
+    color: #06BCC1;
 }
 
 .select-reg{
