@@ -31,7 +31,8 @@ nav{
     padding: 0px 30px 0px 10%;
 }
 
-img{
+.logo, .icon-login{
+    padding: 8px 0px 0px 0px;
     width: 200px;
 }
 a, ul{
@@ -57,7 +58,7 @@ a, ul{
     background-color: #12263A;
     border-radius: 10px;
     height: 45px;
-    width: 100px;
+    width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,9 +71,7 @@ button p{
 }
 
 .icon-login{
-    height: 30px;
-    width: 30px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 15px 7px 0px;
 }
 
 /*MAIN*/
@@ -160,8 +159,69 @@ main{
 
 /*contacto*/
 
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .subtitle-2{
     color: #12263A;
+}
+
+.wp-logo{
+    width: 50px;
+    padding: 0%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    
+}
+
+.form{
+    background-color: #12263A;
+    border-radius: 40px;
+    width: 500px;
+    padding: 20px 0;
+    margin: 50px 0 50px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-form{
+    width: 400px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 3px #06BCC1 solid;
+    border-radius: 10px;
+}
+
+.boton-submit{
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #06BCC1;
+    border-radius: 15px;
+    border: #C5D8D1;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.boton-submit img{
+    padding: 0;
+    margin-left: 5px;
+    width: 20px;
 }
 
 /*Footer*/
