@@ -5,7 +5,9 @@
     padding: 0%;
     scroll-behavior: smooth; /*hace que en la pagina el auto scroll sea suave*/
 }
-
+.mailto{
+    display: none;
+}
 /* DESKTOP*/
 @media screen and (min-width: 1024px) {
         
@@ -245,7 +247,7 @@
 
     .boton-submit{
         width: 120px;
-        height: 50px;
+        height: 40px;
         margin: 5px;
         display: flex;
         flex-direction: row;
@@ -266,7 +268,7 @@
     .boton-submit img{
         padding: 0;
         margin-left: 5px;
-        width: 20px;
+        width: 30px;
     }
 
     /*Footer*/
@@ -728,7 +730,7 @@
     .boton-submit img{
         padding: 0;
         margin-left: 5px;
-        width: 20px;
+        width: 30px;
     }
 
     /*Footer*/
@@ -1184,7 +1186,7 @@
         border: #C5D8D1;
         color: #ffffff;
         font-weight: bolder;
-        font-size: large;
+        font-size: small;
     }
 
     .boton-submit:hover{
@@ -1195,7 +1197,7 @@
     .boton-submit img{
         padding: 0;
         margin-left: 5px;
-        width: 20px;
+        width: 30px;
     }
 
     /*Footer*/

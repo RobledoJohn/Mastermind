@@ -69,19 +69,18 @@
             <section class="contact" id="contact">
                 <h2 class="subtitle-2">Contacto</h2>
                 <div class="contact-group">
-                    <form class="form" method="post">
+                    <form class="form" id="formulario_index" action="">
                         <label for="name"></label>
-                        <input class="item-form" type="text" name="name" placeholder="nombre" required>
-                        <label for="mail"></label>
-                        <input class="item-form" type="email" name="mail" placeholder="correo" required>
+                        <input id="nombre" class="item-form" type="text" name="name" placeholder="nombre" >
                         <label for="asunto"></label>
-                        <input class="item-form" type="text" name="asunto" placeholder="asunto" required>
+                        <input id="asunto" class="item-form" type="text" name="asunto" placeholder="asunto" >
                         <label for="desc"></label>
-                        <textarea class="item-form" name="desc" id="" cols="30" rows="7" placeholder="Descripción" required></textarea>
-                        <button class="boton-submit" type="submit">
-                            Enviar<img src="img/bi_send-fill.png" alt=""> 
+                        <textarea class="item-form" name="desc" id="desc" cols="30" rows="7" placeholder="Descripción" ></textarea>
+                        <button id="btn_enviar" class="boton-submit" type="submit">
+                            Enviar<img src="img/email.png" alt=""> 
                         </button>
                     </form>
+                    <a href="mailto:jjrobledo22@soy.sena.edu.co" class="mailto"></a>
                     <a class="wp-logo" href="http://wa.me/+573024942629" target="_blank"><img  src="img/logos_whatsapp-icon.png" alt="chat whatsapp"></a>
                 </div>
             </section>
@@ -100,5 +99,7 @@
             </div>
         </footer>
     </div>
+    
+    <script src="scripts/index.js"></script>
 </body>
 </html>
