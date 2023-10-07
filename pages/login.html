@@ -3,7 +3,6 @@
 <head>
     <link rel="icon" href="/img/mastermind-logo.png">
     <link rel="stylesheet" href="/style/style.css">
-    <script src="../scripts/login.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autenticación</title>
@@ -13,11 +12,11 @@
         <img src="/img/mastermind-lateral.png" alt="logo" class="logo-log">
         <div class="form-login">
             <h1>Iniciar sesión</h1>
-            <form class="form-logn" action="" method="post">
+            <form class="form-logn" action="" id="form-login">
                 <label for="user"></label>
-                <input class="inp-log" id="email" type="email" name="user" placeholder="E-mail" required>
+                <input class="inp-log" id="email" type="email" name="user" placeholder="E-mail">
                 <label for="pass"></label>
-                <input class="inp-log" id="password" type="password" name="user" placeholder="Contraseña" required>
+                <input class="inp-log" id="password" type="password" name="user" placeholder="Contraseña">
                 <button class="btn-log" type="submit" id="botonLog">Iniciar Sesión</button>
                 <a class="forgot" href="/pages/recuperacion.html">¿Olvidé mi contraseña?</a>
                 <div class="reg-log">
@@ -28,5 +27,6 @@
             </form>
         </div>
     </div>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
