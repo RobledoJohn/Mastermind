@@ -149,7 +149,7 @@
     /*Caracteristicas*/
 
     .services{
-        height: 750px;
+        height: fit-content;
         background-color: #12263A;
         display: flex;
         align-items: center;
@@ -159,8 +159,6 @@
 
     .subtitle{
         color: #06BCC1;
-        margin: 0;
-        padding-bottom: 40px;
     }
 
     .recuadro{
@@ -200,7 +198,7 @@
     .contact{
         display: flex;
         flex-direction: column;
-        height: 620px;
+        height: fit-content;
     }
 
     .contact-group{
@@ -1064,7 +1062,7 @@
         text-align: center;
         font-size: 35px;
         font-weight: bolder;
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
 
@@ -1081,8 +1079,6 @@
 
     .subtitle{
         color: #06BCC1;
-        margin: 0;
-        padding: 10px 0;
     }
 
     .recuadro{
@@ -1135,6 +1131,7 @@
 
     .subtitle-2{
         color: #12263A;
+        
     }
 
     .wp-logo{
