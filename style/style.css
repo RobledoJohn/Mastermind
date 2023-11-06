@@ -347,6 +347,7 @@
         background-color: #12263A;
         border: 3px #06BCC1 solid;
         border-radius: 20px;
+        padding-bottom: 10px;
     }
     .form-req{
         width: 400px;
