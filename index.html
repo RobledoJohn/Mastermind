@@ -1,12 +1,13 @@
 <!DOCTYPE html> <!--Master-->
 <html lang="en">
-<head>
+<head>    
+    <meta charset="UTF-8">
     <link rel="icon" href="img/mastermind-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <meta charset="UTF-8">
+<!--<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">   darkmode sweetalert-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#12263A"/>
     <title>Mastermind</title>
@@ -74,8 +75,8 @@
                         <input id="nombre" class="item-form" type="text" name="name" placeholder="nombre" >
                         <label for="asunto"></label>
                         <input id="asunto" class="item-form" type="text" name="asunto" placeholder="asunto" >
-                        <label for="desc"></label>
-                        <textarea class="item-form" name="desc" id="desc" cols="30" rows="7" placeholder="Descripción" ></textarea>
+                        <label for="descripcion"></label>
+                        <textarea class="item-form" name="descripcion" id="desc" cols="30" rows="7" placeholder="Descripción" ></textarea>
                         <button id="btn_enviar" class="boton-submit" type="submit">
                             Enviar<img src="img/email.png" alt=""> 
                         </button>
@@ -101,5 +102,7 @@
     </div>
     
     <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--libreria sweetalert-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> darkmode sweetalert-->
 </body>
 </html>
