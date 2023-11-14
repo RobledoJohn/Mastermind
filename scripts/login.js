@@ -5,7 +5,7 @@ function loguearse(event){
     var password = document.getElementById("password").value;
 
     if(email !== "" && password !== ""){
-        window.location.href="../pages/prueba.html";
+        window.location.href="https://panel.mastermind-app.site/";
     } else {
         alert("Por favor, complete todos los campos.");
     };
